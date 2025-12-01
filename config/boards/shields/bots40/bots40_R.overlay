@@ -15,7 +15,7 @@
             ;
 };
 
-
+/* オートマウスレイヤー設定
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
@@ -43,6 +43,7 @@
         38
     >;
 };
+*/ 
 
 //SPIM_SCK : SCLK
 //SPIM_MOSI: SDIO

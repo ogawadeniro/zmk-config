@@ -90,10 +90,10 @@
 
         default_layer { //layer 0
             bindings = <
-                &kp Q       &kp W            &kp E       &kp R      &kp T      &mo 5          &kp Y  &kp U  &kp I         &lt 4 O          &kp P               &kp BSPC
-                &mt LCTRL A &mt LC(LSHFT) S  &mt LALT D  &kp F      &kp G      &to 0          &kp H  &kp J  &mt LALT K    &mt LC(LSHFT) L  &mt LCTRL JP_MINUS  &kp RET
-                &lt 3 TAB   &kp Z            &kp X       &kp C      &kp V      &kp B          &kp N  &kp M  &kp JP_COMMA  &kp JP_DOT       &kp JP_SLASH        &lt 3 JP_YEN
-                                             &kp LGUI    &lt 1 DEL  &mt LSHFT ESC             &lt 2 SPACE
+                &mt LALT Q  &kp W  &kp E    &kp R     &kp T      &mo 5              &kp Y  &kp U  &kp I         &lt 4 O     &kp P         &kp BSPC
+                &kp A       &kp S  &lt 4 D  &kp F     &kp G      &to 0              &kp H  &kp J  &kp K         &kp L       &kp JP_MINUS  &kp RET
+                &kp LCTRL   &kp Z  &kp X    &kp C     &kp V      &kp B              &kp N  &kp M  &kp JP_COMMA  &kp JP_DOT  &kp JP_SLASH  &kp DEL
+                                            &kp LGUI  &lt 1 TAB  &mt LSHFT ESC      &lt 2 SPACE
             >;
         };
         /* layer 0
@@ -111,10 +111,10 @@
 
         SYMBOL { //layer 1
             bindings = <
-                &s_kp N7  &s_kp N2     &s_kp N3        &s_kp N4       &s_kp N5  &trans            &s_kp N6     &s_kp N8       &s_kp N9        &s_kp JP_YEN  &kp JP_BSLH     &trans
-                &s_kp N1  &kp JP_AT    &s_kp JP_CARET  &kp JP_CARET   &s_kp N5  &trans            &kp JP_LBKT  &s_kp JP_LBKT  &s_kp JP_RBKT   &kp JP_RBKT   &s_kp JP_MINUS  &trans
-                &trans    &s_kp JP_AT  &s_kp JP_COLON  &s_kp JP_SEMI  &trans    &trans            &kp JP_SEMI  &kp JP_COLON   &s_kp JP_COMMA  &s_kp JP_DOT  &s_kp JP_SLASH  &s_kp JP_BSLH
-                                                       &trans         &trans    &trans            &trans
+                &s_kp JP_CARET  &s_kp N2     &s_kp N3        &s_kp N4       &s_kp N5     &trans            &s_kp N6     &s_kp N8       &s_kp N9        &s_kp JP_YEN  &kp JP_BSLH     &trans
+                &s_kp N1        &kp JP_AT    &s_kp N7        &kp JP_CARET   &s_kp JP_AT  &trans            &kp JP_LBKT  &s_kp JP_LBKT  &s_kp JP_RBKT   &kp JP_RBKT   &s_kp JP_MINUS  &trans
+                &trans          &trans       &s_kp JP_COLON  &s_kp JP_SEMI  &trans       &trans            &kp JP_SEMI  &kp JP_COLON   &s_kp JP_COMMA  &s_kp JP_DOT  &s_kp JP_SLASH  &s_kp JP_BSLH
+                                                             &trans         &trans       &trans            &trans
             >;
         };
         /* layer 1
@@ -153,10 +153,10 @@
 
         MOUSE { //layer 3
             bindings = <
-                &trans  &trans  &trans    &mkp MB3  &trans  &trans                               &mkp MB4        &trans          &trans        &mkp MB5         &trans    &trans
-                &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans                               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &trans    &trans
-                &trans  &trans  &trans    &trans    &trans  &trans                               &trans          &trans          &mkp MB1      &mkp MB2         &mkp MB3  &trans
-                                          &trans    &trans  &trans                               &trans
+                &trans  &trans  &trans  &trans    &trans  &trans                               &trans  &trans    &trans    &trans    &trans    &trans
+                &trans  &trans  &trans  &mkp MB1  &trans  &trans                               &trans  &mkp MB1  &mkp MB1  &mkp MB2  &mkp MB3  &trans
+                &trans  &trans  &trans  &trans    &trans  &trans                               &trans  &trans    &trans    &trans    &trans    &trans
+                                        &trans    &trans  &trans                               &trans
             >;
         };
         /* layer 3
@@ -174,10 +174,10 @@
 
         FUNCTION { //layer 4
             bindings = <
-                &trans  &trans  &trans  &trans  &trans  &trans                      &cg_kp LEFT_ARROW &cg_kp F4  &cg_kp D   &cg_kp RIGHT_ARROW  &kp PSCRN  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                      &mkp MB4          &kp PG_DN  &kp PG_UP  &mkp MB5            &kp INS    &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                      &trans            &kp END    &kp HOME   &trans              &trans     &trans
-                                        &trans  &trans  &trans                      &trans
+                &trans  &kp F7  &kp F8  &kp F9  &kp F12  &trans                      &cg_kp LEFT_ARROW &cg_kp F4  &cg_kp D   &cg_kp RIGHT_ARROW  &kp PSCRN  &trans
+                &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans                      &mkp MB4          &kp PG_DN  &kp PG_UP  &mkp MB5            &kp INS    &trans
+                &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans                      &trans            &kp END    &kp HOME   &trans              &trans     &trans
+                                        &trans  &trans   &trans                      &trans
             >;
         };
         /* layer 4
