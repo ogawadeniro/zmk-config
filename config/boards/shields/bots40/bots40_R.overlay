@@ -1,5 +1,5 @@
 #include "bots40.dtsi"
-#include <input/processors.dtsi>
+// #include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -15,17 +15,19 @@
             ;
 };
 
-/* オートマウスレイヤー設定
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+/* オートマウスレイヤー設定
         // トラボを使用してから1000msの間、マウスレイヤーを有効にする
         input-processors = <&zip_temp_layer 3 1000>;
     };
+*/ 
 };
 
+/* オートマウスレイヤー設定
 &zip_temp_layer {
     // キー入力後指定した秒数の間はAMLを発動しないようにする
     require-prior-idle-ms = <500>;

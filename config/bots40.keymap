@@ -5,7 +5,7 @@
 
 #include "./keycode_japanese.h"
 #include <behaviors/rgbled_widget.dtsi>
-#include <input/processors.dtsi>
+// #include <input/processors.dtsi>
 
 // マウスの速度設定
 // default; 600
@@ -27,10 +27,12 @@
     acceleration-exponent = <1>;
 };
 
+/* オートマウスレイヤー設定
 // マウスキーを押したとき、指定した秒数だけマウスレイヤーを延長する
 &mkp_input_listener {
     input-processors = <&zip_temp_layer 5 200>;
 };
+*/ 
 
 / {
     combos {
