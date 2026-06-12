@@ -1,6 +1,10 @@
 #include "bots40.dtsi"
 // #include <input/processors.dtsi>
 
+&uicr {
+  nfct-pins-as-gpios;
+};
+
 &default_transform {
     col-offset = <6>;
 };
