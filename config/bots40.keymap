@@ -92,19 +92,19 @@
 
         default_layer { //layer 0
             bindings = <
-                &lt 5 DEL  &kp Q       &kp W    &kp E    &kp R    &kp T                         &kp Y  &kp U  &kp I         &kp O         &kp P               &kp BSPC
-                &lt 1 TAB  &lt 1 A     &lt 4 S  &kp D    &kp F    &kp G                         &kp H  &kp J  &kp K         &kp L         &mt LSHFT JP_MINUS  &kp RET
-                &kp CTRL   &mt CTRL Z  &kp X    &kp C    &kp V    &kp B                         &kp N  &kp M  &kp JP_COMMA  &lt 4 JP_DOT  &lt 3 JP_SLASH      &kp LALT
-                                                &kp GUI  &lt 1 TAB  &mt LSHFT ESC               &lt 2 SPACE
+                &lt 5 DEL  &kp Q       &kp W    &kp E    &kp R      &kp T                         &kp Y  &kp U  &kp I         &kp O         &kp P               &kp BSPC
+                &kp TAB    &lt 1 A     &lt 4 S  &kp D    &kp F      &kp G                         &kp H  &kp J  &kp K         &kp L         &mt LSHFT MINUS  &kp RET
+                &kp LALT   &mt CTRL Z  &kp X    &kp C    &kp V      &kp B                         &kp N  &kp M  &kp JP_COMMA  &lt 4 DOT  &lt 3 SLASH      &kp LCTRL
+                                                &mo 4  &kp GUI  &mt LSHFT ESC               &lt 2 SPACE
             >;
         };
 
         SYMBOL { //layer 1
             bindings = <
-                &trans  &s_kp JP_AT  &s_kp N2        &s_kp N3        &s_kp N4        &s_kp N5              &s_kp N6     &s_kp N8       &s_kp N9        &s_kp JP_YEN  &s_kp JP_BSLH   &kp JP_BSLH
-                &trans  &trans       &s_kp N1        &kp JP_AT       &s_kp JP_CARET  &kp JP_CARET          &kp JP_LBKT  &s_kp JP_LBKT  &s_kp JP_RBKT   &kp JP_RBKT   &s_kp JP_MINUS  &trans
-                &trans  &s_kp JP_AT  &s_kp JP_COLON  &s_kp JP_SEMI   &trans          &trans                &kp JP_SEMI  &kp JP_COLON   &s_kp JP_COMMA  &s_kp JP_DOT  &s_kp JP_SLASH  &s_kp JP_BSLH
-                                                     &trans          &trans          &trans                &trans
+                &trans  &kp GRAVE  &kp SQT     &kp LS(SQT)  &kp LS(N3)  &trans                &kp LS(COMMA)  &kp LS(N9)    &kp LS(N0)    &kp LS(DOT)  &trans         &trans
+                &trans  &trans     &kp LS(N1)  &kp LS(N2)   &kp LS(N5)  &kp LS(GRAVE)         &kp LBKT       &kp LS(LBKT)  &kp LS(RBKT)  &kp RBKT     &kp LS(BSLH)   &kp LS(N7)
+                &trans  &trans     &trans      &kp EQUAL    &kp LS(N8)  &trans                &kp LS(N6)     &kp LS(SEMI)  &kp SEMI      &kp LS(N4)   &kp LS(SLASH)  &kp BSLH
+                                               &trans       &trans      &trans                &trans
             >;
         };
 
@@ -137,10 +137,10 @@
 
         MANAGEMENT { //layer 5
             bindings = <
-                &trans        &trans        &trans        &trans        &trans        &trans                  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
-                &trans        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans  &trans  &trans
-                &bootloader   &trans        &trans        &ind_con      &trans        &ind_bat                &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-                                                          &trans        &trans        &trans                  &trans
+                &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
+                &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans        &trans        &ind_con      &trans        &ind_bat                &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+                                                    &trans        &trans        &trans                  &trans
             >;
         };
     };
