@@ -101,10 +101,10 @@
 
         SYMBOL { //layer 1
             bindings = <
-                &trans  &kp GRAVE  &kp SQT     &kp LS(SQT)  &kp LS(N3)  &trans                &kp LS(COMMA)  &kp LS(N9)    &kp LS(N0)    &kp LS(DOT)  &trans         &trans
-                &trans  &trans     &kp LS(N1)  &kp LS(N2)   &kp LS(N5)  &kp LS(GRAVE)         &kp LBKT       &kp LS(LBKT)  &kp LS(RBKT)  &kp RBKT     &kp LS(BSLH)   &kp LS(N7)
-                &trans  &trans     &trans      &kp EQUAL    &kp LS(N8)  &trans                &kp LS(N6)     &kp LS(SEMI)  &kp SEMI      &kp LS(N4)   &kp LS(SLASH)  &kp BSLH
-                                               &trans       &trans      &trans                &trans
+                &trans  &kp GRAVE  &kp SQT     &kp LS(SQT)    &kp LS(N3)  &trans                &kp LS(N6)  &kp LS(N9)    &kp LS(N0)     &kp LS(N4)  &kp LS(BSLH)   &trans
+                &trans  &trans     &kp LS(N1)  &kp LS(N2)     &kp LS(N5)  &kp LS(GRAVE)         &kp LBKT    &kp LS(LBKT)  &kp LS(RBKT)   &kp RBKT    &kp LS(MINUS)  &kp LS(N7)
+                &trans  &trans     &trans      &kp LS(EQUAL)  &kp LS(N8)  &trans                &kp SEMI    &kp LS(SEMI)  &kp LS(COMMA)  &kp LS(DOT) &kp LS(SLASH)  &kp BSLH
+                                               &trans         &trans      &trans                &trans
             >;
         };
 
@@ -128,10 +128,10 @@
 
         FUNCTION { //layer 4
             bindings = <
-                &trans  &trans  &trans  &trans  &trans  &trans                                    &cg_kp LEFT_ARROW &cg_kp F4  &cg_kp D   &cg_kp RIGHT_ARROW  &kp PSCRN  &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                                    &mkp MB4          &kp PG_DN  &kp PG_UP  &mkp MB5            &kp INS    &trans
-                &trans  &trans  &trans  &trans  &trans  &trans                                    &trans            &kp END    &kp HOME   &trans              &trans     &trans
-                                        &trans  &trans  &trans                                    &trans
+                &trans  &trans  &trans  &trans  &trans  &trans                                    &kp K_VOL_DN    &kp K_PREV      &kp K_NEXT    &kp K_VOL_UP     &kp PSCRN  &kp K_MUTE
+                &trans  &trans  &trans  &trans  &trans  &trans                                    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp INS    &trans
+                &trans  &trans  &trans  &trans  &trans  &trans                                    &trans          &kp END         &kp HOME      &trans           &trans     &trans
+                                        &trans  &trans  &trans                                    &kp K_PLAY_PAUSE
             >;
         };
 
