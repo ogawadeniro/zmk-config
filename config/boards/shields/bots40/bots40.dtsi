@@ -3,8 +3,6 @@
 
 / {
     chosen {
-        //zmk,kscan = &kscan0;
-        //zmk,matrix_transform = &default_transform;
         zmk,physical-layout = &bots40_physical_layout;
     };
 
@@ -32,7 +30,6 @@
     
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "col2row";
             row-gpios
                 = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
@@ -48,24 +45,6 @@
         led-green = &led1;
         led-blue = &led2;
     };
-
-    //left_encoder: encoder_left {
-    //    compatible = "alps,ec11";
-    //    a-gpios = <&xiao_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //    b-gpios = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-    //    steps = <12>;
-    //    status = "disabled";
-    //};
-
-    //right_encoder: encoder_right {
-    //    status = "disabled";
-    //};
-
-    //sensors: sensors {
-    //    compatible = "zmk,keymap-sensors";
-    //    sensors = <&left_encoder &right_encoder>;
-    //    triggers-per-rotation = <10>;
-    //};
 };
 
 &xiao_serial { status = "disabled"; };

@@ -15,10 +15,6 @@ manifest:
       revision: main
       import: app/west.yml
 
-    # - name: zmk-pmw3610-driver
-    #   remote: inorichi
-    #   revision: main
-
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: main

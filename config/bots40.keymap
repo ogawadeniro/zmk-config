@@ -5,7 +5,6 @@
 
 #include "./keycode_japanese.h"
 #include <behaviors/rgbled_widget.dtsi>
-// #include <input/processors.dtsi>
 
 // マウスの速度設定
 // default; 600
@@ -27,13 +26,6 @@
     acceleration-exponent = <1>;
 };
 
-/* オートマウスレイヤー設定
-// マウスキーを押したとき、指定した秒数だけマウスレイヤーを延長する
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 5 200>;
-};
-*/ 
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -41,7 +33,6 @@
 
     macros {
          s_kp: s_kp {
-            label = "S_KP";
             compatible = "zmk,behavior-macro-one-param";
             wait-ms = <16>;
             tap-ms = <0>;
@@ -54,7 +45,6 @@
                 ;
         };
         cg_kp: cg_kp {
-            label = "CG_KP";
             compatible = "zmk,behavior-macro-one-param";
             wait-ms = <16>;
             tap-ms = <0>;
@@ -68,23 +58,6 @@
                 , <&macro_release &kp LCTRL>
                 ;
         };
-        // to_layer_0: to_layer_0 {
-        //     compatible = "zmk,behavior-macro-one-param";
-        //     #binding-cells = <1>;
-        //     bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-        //     label = "TO_LAYER_0";
-        // };
-    };
-
-    behaviors {
-        // lt_to_layer_0: lt_to_layer_0 {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     label = "LAYER_TAP_TO_0";
-        //     bindings = <&mo>, <&to_layer_0>;
-
-        //     #binding-cells = <2>;
-        //     tapping-term-ms = <200>;
-        // };
     };
 
     keymap {
